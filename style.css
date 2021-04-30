@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  color: rgb(219, 218, 218);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  border: 0;
+}
+html {
+  min-height: 100%;
+  background-image: url("images/initial-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.calculator {
+  display: grid;
+}
+.screen {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background: rgba(2, 26, 46, 0.85);
+  backdrop-filter: blur(20px);
+  width: 280px;
+  height: 60px;
+}
+.display {
+  font-size: 30px;
+  padding: 10px;
+}
+.number-container {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px 70px 70px;
+  grid-gap: 0px;
+}
+.numbers {
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px 70px 70px;
+  grid-gap: 0px;
+}
+.operators {
+  grid-column: 2/2;
+  display: grid;
+  grid-template-columns: 70px;
+  grid-template-rows: 70px 70px 70px 70px;
+  grid-gap: 0px;
+}
+.op {
+  background: rgba(21, 66, 102, 0.85);
+  backdrop-filter: blur(20px);
+}
+.op:hover {
+  background: rgba(21, 66, 102, 0.95);
+  transition: 0.1s;
+}
+.clear {
+  width: 280px;
+  background: rgba(21, 66, 102, 0.85);
+  backdrop-filter: blur(20px);
+}
+.clear:hover {
+  background: rgba(21, 66, 102, 0.95);
+  transition: 0.1s;
+}
+.equal {
+  margin-top: 210px;
+  width: 140px;
+  height: 70px;
+  background: rgba(21, 66, 102, 0.85);
+  backdrop-filter: blur(20px);
+}
+.equal:hover {
+  background: rgba(21, 66, 102, 0.95);
+  transition: 0.1s;
+}
+.num {
+  background: rgba(65, 86, 114, 0.85);
+  backdrop-filter: blur(20px);
+}
+.num:hover {
+  background: rgba(65, 86, 114, 0.95);
+  transition: 0.1s;
+}
+.change {
+  background: rgba(61, 47, 47, 0.623);
+  cursor: pointer;
+}
+.change:hover {
+  background: rgba(61, 47, 47, 0.823);
+  transition: 0.2s;
+}
+.credits {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgb(190, 190, 190);
+  background: rgba(47, 53, 61, 0.26);
+  font-size: 15px;
+}
+.credits a {
+  font-size: 15px;
+  text-decoration: none;
+}
+.credits a:hover {
+  text-decoration: underline;
+}

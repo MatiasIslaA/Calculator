@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="calculator">
-            <div class="screen">
-                <p class="display">0</p>
-            </div>
-            <div class="numbers" id="num">
-                <button class="num">1</button>
-                <button class="num">2</button>
-                <button class="num">3</button>
-                <button class="num">4</button>
-                <button class="num">5</button>
-                <button class="num">6</button>
-                <button class="num">7</button>
-                <button class="num">8</button>
-                <button class="num">9</button>
-                <button class="num">0</button>
-            </div>
-            <div class="operators">
-                <button>+</button>
-                <button>-</button>
-                <button>/</button>
-                <button>*</button>
-            </div>
-            <div class="options">
-                <button class="clear">Clear</button>
-                <button class="equal">Equal</button>
-            </div>
+      <div class="calculator">
+        <div class="screen">
+          <p class="display">0</p>
         </div>
+        <div class="number-container" id="num">
+          <button class="clear">Clear</button>
+          <div></div>
+          <div></div>
+          <div class="numbers">
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button class="num">0</button>
+          </div>
+          <button class="equal">Equal</button>
+        </div>
+        <div class="operators">
+          <div></div>
+          <button class="op">+</button>
+          <button class="op">-</button>
+          <button class="op">/</button>
+          <button class="op">*</button>
+        </div>
+      </div>
+      <button class="change">
+        <i class="fas fa-sync-alt"></i>Change background
+      </button>
+      <p class="credits">
+        Made by
+        <a href="https://github.com/MatiasIslaA"
+          ><i class="fab fa-github fa-sm"></i>Matías Isla</a
+        >.<br />
+        Background pictures from
+        <a href="https://unsplash.com/s/photos/japan">Unsplash API</a>.
+      </p>
+      <p class="credits"></p>
     </div>
 
     <script src="calculator.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/959f24c154.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
